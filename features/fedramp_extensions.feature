@@ -120,6 +120,7 @@ Examples:
   | interconnection-security |
   | inventory-item-allows-authenticated-scan |
   | inventory-item-and-component-has-public |
+  | inventory-item-has-software-name |
   | inventory-item-has-software-version |
   | inventory-item-has-valid-mac-address |
   | inventory-item-has-vendor-name |
@@ -374,6 +375,8 @@ Examples:
   | inventory-item-allows-authenticated-scan-PASS.yaml |
   | inventory-item-and-component-has-public-FAIL.yaml |
   | inventory-item-and-component-has-public-PASS.yaml |
+  | inventory-item-has-software-name-FAIL.yaml |
+  | inventory-item-has-software-name-PASS.yaml |
   | inventory-item-has-software-version-FAIL.yaml |
   | inventory-item-has-software-version-PASS.yaml |
   | inventory-item-has-valid-mac-address-FAIL.yaml |

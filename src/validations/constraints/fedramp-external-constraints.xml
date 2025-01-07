@@ -663,6 +663,10 @@
         <metapath target="/system-security-plan/system-implementation/inventory-item"/>
         <constraints>
             <let var ="component-uuid" expression="implemented-component/@component-uuid"/>
+            <expect id="inventory-item-has-software-name" target=".[prop[@name='asset-type' and @value=('operating-system', 'container', 'image')] or ../component[uuid=$component-uuid and type='software']]" test="count(prop[@name=('software-name', 'os-name')]) = 1 or count(../component[@uuid=$component-uuid]/prop[@name=('software-name', 'os-name')]) = 1" level="ERROR">
+                <formal-name>Inventory Item Has Software Name</formal-name>
+                <prop namespace="https://docs.oasis-open.org/sarif/sarif/v2.1.0" name="help-url" value="https://automate.fedramp.gov/documentation/ssp/5-attachments/#system-inventory-approach"/>
+                <message>In a FedRAMP SSP, each inventory item MUST include the software name in the inventory item itself or within the linked component.</message>
             <expect id="inventory-item-has-software-version" target=".[prop[@name='asset-type' and @value=('operating-system', 'container', 'image')] or ../component[uuid=$component-uuid and type='software']]" test="count(prop[@name=('software-version', 'os-version')]) = 1 or count(../component[@uuid=$component-uuid]/prop[@name=('software-version', 'os-version')]) = 1" level="ERROR">
                 <formal-name>Inventory Item Has Software Version</formal-name>
                 <prop namespace="https://docs.oasis-open.org/sarif/sarif/v2.1.0" name="help-url" value="https://automate.fedramp.gov/documentation/ssp/5-attachments/#system-inventory-approach"/>
