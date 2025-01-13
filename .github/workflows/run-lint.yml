@@ -17,7 +17,11 @@ jobs:
   # one job that runs tests
   run-tests:
     runs-on: ubuntu-20.04
-    # Checkout repository and its submodules
+    strategy:
+      matrix:
+        version: ['latest', 'snapshot']
+    name: Run style tests (${{ matrix.version }})
+        # Checkout repository and its submodules
     steps:
       # Check-out the repository under $GITHUB_WORKSPACE
       - name: Checkout repository
@@ -38,6 +42,8 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Install OSCAL CLI 
+        env:
+          USE_SNAPSHOT: ${{ matrix.version == 'snapshot' && '1' || '' }}
         run: |
           make configure
       - name: Run Lint tests

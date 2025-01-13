@@ -1,7 +1,12 @@
 # Variables
 OSCAL_VERSION = $(shell jq -r .dependencies.oscal package.json)
-OSCAL_CLI_VERSION = $(shell awk '/^oscal-cli/ {print $$2}' .tool-versions)
-OSCAL_SERVER_VERSION = $(shell awk '/^oscal-server/ {print $$2}' .tool-versions)
+ifdef USE_SNAPSHOT
+OSCAL_CLI_VERSION = $(shell awk '/^oscal-cli-snapshot / {print $$2}' .tool-versions)
+OSCAL_SERVER_VERSION = $(shell awk '/^oscal-server-snapshot / {print $$2}' .tool-versions)
+else
+OSCAL_CLI_VERSION = $(shell awk '/^oscal-cli / {print $$2}' .tool-versions)
+OSCAL_SERVER_VERSION = $(shell awk '/^oscal-server / {print $$2}' .tool-versions)
+endif
 OSCAL_CLI = npx oscal@$(OSCAL_VERSION)
 SRC_DIR = ./src
 DIST_DIR = ./dist
