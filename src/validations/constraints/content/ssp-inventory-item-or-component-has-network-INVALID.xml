@@ -1,0 +1,12 @@
+<system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="11111111-2222-4000-8000-000000000000">
+  <system-implementation>
+    <component uuid="11111111-2222-4000-8000-009000500004" type="service">
+      <prop name="implementation-point" value="internal"/>
+      <!-- <prop name="ipv4-address" value="10.10.10.100"/> Missing network.-->
+    </component>
+    <inventory-item uuid="11111111-2222-4000-8000-011000000009">
+      <!-- <prop name="ipv4-address" value="10.10.10.100"/> Missing network.-->
+      <!-- <prop name="ipv6-address" value="0000:0000:0000:0000:0000:ffff:0a08:0808"/> Missing network.-->
+    </inventory-item>
+  </system-implementation>
+</system-security-plan>

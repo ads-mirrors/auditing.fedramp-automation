@@ -1525,6 +1525,7 @@ leveraged-authorization assembly:</p>
       <prop name="implementation-point" value="internal"/>
       <prop name="public" value="no"/>
       <prop name="connection-security" value="tls-1.3" ns="http://fedramp.gov/ns/oscal"/>
+      <prop name="ipv4-address" value="10.10.10.100"/>
       <prop ns="http://fedramp.gov/ns/oscal" name="provider" value="self"/>
       <prop ns="http://fedramp.gov/ns/oscal" name="direction" value="outgoing"/>
       <prop ns="http://fedramp.gov/ns/oscal" name="authentication-method" value="yes">
@@ -1656,6 +1657,7 @@ property.</p>
       </description>
       <prop name="implementation-point" value="internal"/>
       <prop name="public" value="yes"/>
+      <prop name="ipv4-address" value="10.10.10.100"/>
       <prop ns="http://fedramp.gov/ns/oscal" name="scan-type" value="infrastructure"/>
       <status state="operational"/>
       

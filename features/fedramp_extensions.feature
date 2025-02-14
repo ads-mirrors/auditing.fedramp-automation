@@ -131,6 +131,7 @@ Examples:
   | inventory-item-has-valid-mac-address |
   | inventory-item-has-vendor-name |
   | inventory-item-or-component-has-asset-id |
+  | inventory-item-or-component-has-network |
   | inventory-item-public |
   | inventory-item-virtual |
   | last-accessed-is-datetime |
@@ -404,6 +405,8 @@ Examples:
   | inventory-item-has-vendor-name-PASS.yaml |
   | inventory-item-or-component-has-asset-id-FAIL.yaml |
   | inventory-item-or-component-has-asset-id-PASS.yaml |
+  | inventory-item-or-component-has-network-FAIL.yaml |
+  | inventory-item-or-component-has-network-PASS.yaml |
   | inventory-item-public-FAIL.yaml |
   | inventory-item-public-PASS.yaml |
   | inventory-item-virtual-FAIL.yaml |
