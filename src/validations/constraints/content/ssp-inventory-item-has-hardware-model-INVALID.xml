@@ -1,0 +1,13 @@
+<system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="11111111-2222-4000-8000-000000000000">
+  <system-implementation>
+    <component uuid="11111111-2222-4000-8000-009000000007" type="hardware">
+      <prop name="asset-type" value="hardware"/>
+      <!-- <prop name="hardware-model" value="model"/> Missing "hardware-model" prop. -->
+    </component>
+    <inventory-item uuid="11111111-2222-4000-8000-011000000001">
+      <!-- <prop name="hardware-model" value="model"/> Missing "hardware-model" prop. -->
+      <implemented-component component-uuid="11111111-2222-4000-8000-009000000007">
+      </implemented-component>
+    </inventory-item>
+  </system-implementation>
+</system-security-plan>

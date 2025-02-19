@@ -125,6 +125,7 @@ Examples:
   | inventory-item-allows-authenticated-scan |
   | inventory-item-and-component-has-public |
   | inventory-item-has-function |
+  | inventory-item-has-hardware-model |
   | inventory-item-has-scan-type |
   | inventory-item-has-software-name |
   | inventory-item-has-software-version |
@@ -393,6 +394,8 @@ Examples:
   | inventory-item-and-component-has-public-PASS.yaml |
   | inventory-item-has-function-FAIL.yaml |
   | inventory-item-has-function-PASS.yaml |
+  | inventory-item-has-hardware-model-FAIL.yaml |
+  | inventory-item-has-hardware-model-PASS.yaml |
   | inventory-item-has-scan-type-FAIL.yaml |
   | inventory-item-has-scan-type-PASS.yaml |
   | inventory-item-has-software-name-FAIL.yaml |

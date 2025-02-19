@@ -2470,6 +2470,7 @@ approved.</p>
       <description>
         <p>None.</p>
       </description>
+      <prop name="hardware-model" value="model"/>
       <prop name="asset-id" value="unique-asset-ID-06"/>
       <prop name="ipv4-address" value="10.6.6.6"/>
       <prop name="ipv6-address" value="0000:0000:0000:0000:0000:ffff:0a06:0606"/>
