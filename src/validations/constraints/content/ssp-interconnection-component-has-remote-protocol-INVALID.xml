@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://github.com/usnistgov/OSCAL/releases/download/v1.1.3/oscal_ssp_schema.xsd" schematypens="http://www.w3.org/2001/XMLSchema" title="OSCAL complete schema"?>
+<system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="df903c4c-6bb5-4b78-8a71-c5baa06a9f2e">
+   <system-implementation>
+        <component uuid="11111111-2222-4000-8000-009000200002" type="interconnection">
+            <!-- Missing at least one remote IPv4 Address, IPv6 Address, URI, or FQDN. -->
+            <!--prop name="ipv4-address" class="remote" value="10.2.2.2"/-->
+            <!--prop name="ipv6-address" class="remote" value="::ffff:10.2.2.2"/-->
+            <!--prop name="fqdn" class="remote" value="dns.name"/-->
+            <!--prop name="uri" class="remote" value="uniform.resource.identifier"/-->
+            <!--link rel="uri" href="#11111111-2222-4000-8000-009000100001"/-->
+        </component>
+   </system-implementation>
+</system-security-plan>

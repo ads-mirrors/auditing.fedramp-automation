@@ -1,0 +1,8 @@
+# Driver for the valid interconnection-component-has-remote-protocol constraint unit test.
+test-case:
+  name: The valid interconnection-component-has-remote-protocol constraint unit test.
+  description: Test that the FedRAMP SSP interconnection component has at least one remote IPv4 Address, IPv6 Address, URI, or FQDN.
+  content: ../../../content/rev5/examples/ssp/xml/fedramp-ssp-example.oscal.xml
+  expectations:
+  - constraint-id: interconnection-component-has-remote-protocol
+    result: pass
