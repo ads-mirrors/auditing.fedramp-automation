@@ -616,6 +616,11 @@
                 <prop namespace="https://docs.oasis-open.org/sarif/sarif/v2.1.0" name="help-url" value="https://automate.fedramp.gov/documentation/ssp/4-ssp-template-to-oscal-mapping/#system-information-and-information-types"/>
                 <message>An inter-boundary communication component {@uuid} ({path(.)}) MUST have at least one information-type property.</message>
             </expect>
+            <expect id="interconnection-component-has-local-protocol" target="component[@type='interconnection']" test="count(prop[@class='local' and @name=('ipv4-address','ipv6-address','fqdn','uri')] | link[@rel='uri']) &gt;= 1" level="ERROR">
+                <formal-name>Interconnection Component Has Local Protocols</formal-name>
+                <prop namespace="https://docs.oasis-open.org/sarif/sarif/v2.1.0" name="help-url" value="https://automate.fedramp.gov/documentation/ssp/5-attachments/"/>
+                <message>In a FedRAMP SSP, an interconnection component MUST have at least one local IPv4 Address, IPv6 Address, URI, or FQDN.</message>
+            </expect>
             <expect id="inventory-item-and-component-has-public" target="(inventory-item | component[@type='service' and prop[@name='implementation-point' and @value='internal']])" test="count(prop[@name='public']) = 1" level="ERROR">
                 <formal-name>Inventory Item and Component Has Public</formal-name>
                 <prop namespace="https://docs.oasis-open.org/sarif/sarif/v2.1.0" name="help-url" value="https://automate.fedramp.gov/documentation/ssp/5-attachments/#system-inventory-approach"/>
