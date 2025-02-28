@@ -1,0 +1,7 @@
+test-case:
+  name: Negative Test for vendor-dependency
+  description: This test case validates the behavior of constraint vendor-dependency
+  content: ../content/poam-vendor-dependency-INVALID.xml
+  expectations:
+    - constraint-id: vendor-dependency
+      result: fail

@@ -1,0 +1,9 @@
+test-case:
+  name: Positive Test for scheduled-completion-date-type
+  description: >-
+    This test case validates the behavior of constraint
+    scheduled-completion-date-type
+  content: ../../../content/awesome-cloud/xml/AwesomeCloudPOAM.xml
+  expectations:
+    - constraint-id: scheduled-completion-date-type
+      result: pass

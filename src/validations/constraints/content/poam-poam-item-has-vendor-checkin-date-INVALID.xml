@@ -1,0 +1,8 @@
+<plan-of-action-and-milestones xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="5f7afa40-3d9d-475b-9e34-47a768371be3">
+  <poam-item uuid="9f07e816-388f-4096-b625-58bd462f748d">
+        <prop name="has-vendor-dependency" ns="http://fedramp.gov/ns/oscal" value="yes"/>
+        <!-- <prop name="vendor-checkin-date" ns="http://fedramp.gov/ns/oscal" value="2023-06-01+00:00"/> Missing "vendor-checkin-date" prop. -->
+        <related-observation observation-uuid="58e34e49-32bb-4c63-b9e6-158a0620fcd5"/>
+        <associated-risk risk-uuid="56aff720-e21a-4def-8ea6-e91388c1d96f"/>
+    </poam-item>
+</plan-of-action-and-milestones>

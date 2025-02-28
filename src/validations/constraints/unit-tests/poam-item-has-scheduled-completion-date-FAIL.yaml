@@ -1,0 +1,9 @@
+test-case:
+  name: Negative Test for poam-item-has-scheduled-completion-date
+  description: >-
+    This test case validates the behavior of constraint
+    poam-item-has-scheduled-completion-date
+  content: ../content/poam-poam-item-has-scheduled-completion-date-INVALID.xml
+  expectations:
+    - constraint-id: poam-item-has-scheduled-completion-date
+      result: fail

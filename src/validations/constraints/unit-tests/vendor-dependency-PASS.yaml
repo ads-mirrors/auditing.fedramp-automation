@@ -1,0 +1,7 @@
+test-case:
+  name: Positive Test for vendor-dependency
+  description: This test case validates the behavior of constraint vendor-dependency
+  content: ../../../content/awesome-cloud/xml/AwesomeCloudPOAM.xml
+  expectations:
+    - constraint-id: vendor-dependency
+      result: pass

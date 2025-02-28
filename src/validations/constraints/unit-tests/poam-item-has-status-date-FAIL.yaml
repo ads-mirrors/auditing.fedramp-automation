@@ -1,0 +1,9 @@
+test-case:
+  name: Negative Test for poam-item-has-status-date
+  description: >-
+    This test case validates the behavior of constraint
+    poam-item-has-status-date
+  content: ../content/poam-poam-item-has-status-date-INVALID.xml
+  expectations:
+    - constraint-id: poam-item-has-status-date
+      result: fail

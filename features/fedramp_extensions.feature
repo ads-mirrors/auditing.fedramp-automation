@@ -174,6 +174,9 @@ Examples:
   | network-component-has-implementation-point |
   | non-provider-responsible-role-references-user |
   | party-has-name |
+  | poam-item-has-scheduled-completion-date |
+  | poam-item-has-status-date |
+  | poam-item-has-vendor-checkin-date |
   | privilege-level |
   | prop-response-point-has-cardinality-one |
   | resource-has-base64-or-rlink |
@@ -191,9 +194,11 @@ Examples:
   | saas-has-leveraged-authorization |
   | scan-type |
   | scan-type-has-remarks |
+  | scheduled-completion-date-type |
   | security-level |
   | security-sensitivity-level-matches-security-impact-level |
   | statement-has-this-system-component |
+  | status-date-type |
   | unique-inventory-item-asset-id |
   | used-by-link-references-component |
   | user-authentication |
@@ -204,6 +209,7 @@ Examples:
   | user-sensitivity-level |
   | user-type |
   | validation-reference-has-correct-format |
+  | vendor-dependency |
 #END_DYNAMIC_CONSTRAINT_IDS
 
 @constraints
@@ -519,6 +525,12 @@ Examples:
   | non-provider-responsible-role-references-user-PASS.yaml |
   | party-has-name-FAIL.yaml |
   | party-has-name-PASS.yaml |
+  | poam-item-has-scheduled-completion-date-FAIL.yaml |
+  | poam-item-has-scheduled-completion-date-PASS.yaml |
+  | poam-item-has-status-date-FAIL.yaml |
+  | poam-item-has-status-date-PASS.yaml |
+  | poam-item-has-vendor-checkin-date-FAIL.yaml |
+  | poam-item-has-vendor-checkin-date-PASS.yaml |
   | privilege-level-FAIL.yaml |
   | privilege-level-PASS.yaml |
   | resource-has-base64-or-rlink-FAIL.yaml |
@@ -553,12 +565,16 @@ Examples:
   | scan-type-PASS.yaml |
   | scan-type-has-remarks-FAIL.yaml |
   | scan-type-has-remarks-PASS.yaml |
+  | scheduled-completion-date-type-FAIL.yaml |
+  | scheduled-completion-date-type-PASS.yaml |
   | security-level-FAIL.yaml |
   | security-level-PASS.yaml |
   | security-sensitivity-level-matches-security-impact-level-FAIL.yaml |
   | security-sensitivity-level-matches-security-impact-level-PASS.yaml |
   | statement-has-this-system-component-FAIL.yaml |
   | statement-has-this-system-component-PASS.yaml |
+  | status-date-type-FAIL.yaml |
+  | status-date-type-PASS.yaml |
   | unique-inventory-item-asset-id-FAIL.yaml |
   | unique-inventory-item-asset-id-PASS.yaml |
   | used-by-link-references-component-FAIL.yaml |
@@ -579,6 +595,8 @@ Examples:
   | user-type-PASS.yaml |
   | validation-reference-has-correct-format-FAIL.yaml |
   | validation-reference-has-correct-format-PASS.yaml |
+  | vendor-dependency-FAIL.yaml |
+  | vendor-dependency-PASS.yaml |
 #END_DYNAMIC_TEST_CASES
 
 @style-guide

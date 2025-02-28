@@ -659,6 +659,14 @@
                 <enum value="privileged">Privileged</enum>
             </allowed-values>
 
+            <allowed-values id="vendor-dependency" target="poam-item/prop[@ns='http://fedramp.gov/ns/oscal' and @name='has-vendor-dependency']/@value" allow-other="no" level="ERROR">
+                <formal-name>Vendor Dependency</formal-name>
+                <description>Identifies if vendor dependency is indicated.</description>
+                <prop namespace="https://docs.oasis-open.org/sarif/sarif/v2.1.0" name="help-url" value="https://automate.fedramp.gov/documentation/poam/4-poam-template-to-oscal-mapping/"/>
+                <enum value="yes">Yes</enum>
+                <enum value="no">No</enum>
+            </allowed-values>
+
         </constraints>
     </context>
 

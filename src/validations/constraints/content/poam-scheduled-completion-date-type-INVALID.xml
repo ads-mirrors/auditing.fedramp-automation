@@ -1,0 +1,6 @@
+<plan-of-action-and-milestones xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="5f7afa40-3d9d-475b-9e34-47a768371be3">
+  <poam-item uuid="a908cb44-446a-450d-970d-73c968fd5389">
+    <!-- Invalid format for "scheduled-completion-date" prop. -->
+    <prop name="scheduled-completion-date" ns="http://fedramp.gov/ns/oscal" value="Invalid"/> 
+  </poam-item>
+</plan-of-action-and-milestones>

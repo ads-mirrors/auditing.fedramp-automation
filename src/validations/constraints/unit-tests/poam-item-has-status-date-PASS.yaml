@@ -1,0 +1,9 @@
+test-case:
+  name: Positive Test for poam-item-has-status-date
+  description: >-
+    This test case validates the behavior of constraint
+    poam-item-has-status-date
+  content: ../../../content/awesome-cloud/xml/AwesomeCloudPOAM.xml
+  expectations:
+    - constraint-id: poam-item-has-status-date
+      result: pass

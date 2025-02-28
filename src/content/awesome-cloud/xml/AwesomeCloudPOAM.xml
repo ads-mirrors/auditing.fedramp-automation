@@ -217,7 +217,9 @@
         <title>Asset Inventory Out of Date</title>
         <description>
             <h1>AwesomeCloud asset inventory is out of date.</h1>
-        </description>    
+        </description>
+        <prop name="status-date" ns="http://fedramp.gov/ns/oscal" value="2023-01-01+00:00"/>
+        <prop name="scheduled-completion-date" ns="http://fedramp.gov/ns/oscal" value="2023-05-01+00:00"/>    
         <related-observation observation-uuid="727fd8c7-8bb6-4e2d-add2-0cd32b022d17"/>
         <associated-risk risk-uuid="0683df1e-880b-469c-a146-2bd8a25019dd"/>
     </poam-item>
@@ -225,7 +227,9 @@
         <title>SSL Certificate Expiry</title>
         <description>
             <h1>AwesomeCloud is utilize an expired SSL certificate</h1>
-        </description>        
+        </description>
+        <prop name="status-date" ns="http://fedramp.gov/ns/oscal" value="2023-01-01+00:00"/>
+        <prop name="scheduled-completion-date" ns="http://fedramp.gov/ns/oscal" value="2023-05-01+00:00"/>          
         <related-observation observation-uuid="c6d956e2-e6fa-412a-8143-dbc85d56713e"/>
         <associated-risk risk-uuid="5811184c-af7c-46fa-aaef-c9eef1a043ac"/>
     </poam-item>
@@ -233,7 +237,9 @@
         <title>Ethernet Driver Information Disclosure</title>
         <description>
             <h1>Vulnerabilty Ehternet Driver</h1>
-        </description>        
+        </description>
+        <prop name="status-date" ns="http://fedramp.gov/ns/oscal" value="2023-01-01+00:00"/>  
+        <prop name="scheduled-completion-date" ns="http://fedramp.gov/ns/oscal" value="2023-05-01+00:00"/>       
         <related-observation observation-uuid="5904569a-6efc-4842-ae7c-69199ed7c2bd"/>
         <associated-risk risk-uuid="2eb9e124-1997-4806-8a39-50903bce2c94"/>
     </poam-item>
@@ -241,7 +247,9 @@
         <title>Weak hash algorithm of the SSL certificate</title>
         <description>
             <h1>Weak hashing algorithims are utilized</h1>
-        </description>        
+        </description>
+        <prop name="status-date" ns="http://fedramp.gov/ns/oscal" value="2023-01-01+00:00"/> 
+        <prop name="scheduled-completion-date" ns="http://fedramp.gov/ns/oscal" value="2023-05-01+00:00"/>         
         <related-observation observation-uuid="82a52a6f-cd50-47ba-837a-fefd455da4e8"/>
         <associated-risk risk-uuid="2a59c148-5c5d-4905-852c-fe5ac19850aa"/>
     </poam-item>
@@ -249,7 +257,9 @@
         <title>SMB Signing Enforcement</title>
         <description>
             <h1>SMB Sigining is not enforced</h1>
-        </description>        
+        </description>
+        <prop name="status-date" ns="http://fedramp.gov/ns/oscal" value="2023-01-01+00:00"/> 
+        <prop name="scheduled-completion-date" ns="http://fedramp.gov/ns/oscal" value="2023-05-01+00:00"/>         
         <related-observation observation-uuid="7f9cb6de-5c98-4c2b-a433-4759c034f7a0"/>
         <associated-risk risk-uuid="df607526-c3b5-4891-857f-e6f2956b7410"/>
     </poam-item>
@@ -257,7 +267,9 @@
         <title>RSA Keys Less Than 2048 Bits</title>
         <description>
             <h1>Certificate key length does not meet industry standards.</h1>
-        </description>        
+        </description>
+        <prop name="status-date" ns="http://fedramp.gov/ns/oscal" value="2023-01-01+00:00"/> 
+        <prop name="scheduled-completion-date" ns="http://fedramp.gov/ns/oscal" value="2023-05-01+00:00"/>         
         <related-observation observation-uuid="0f8ae9c9-3355-4d47-bbd2-e4b4cba484d1"/>
         <associated-risk risk-uuid="f4520307-1f24-4843-999c-ca778bf4c320"/>
     </poam-item>
@@ -265,7 +277,9 @@
         <title>TLS Version 1.0 Protocol</title>
         <description>
             <h1>AwesomeCloud employs a week version of TLS</h1>
-        </description>        
+        </description>
+        <prop name="status-date" ns="http://fedramp.gov/ns/oscal" value="2023-01-01+00:00"/> 
+        <prop name="scheduled-completion-date" ns="http://fedramp.gov/ns/oscal" value="2023-05-01+00:00"/>         
         <related-observation observation-uuid="ddec6e55-d009-4491-bd95-f0077957f51b"/>
         <associated-risk risk-uuid="6b595947-145b-4fbe-9f84-0645a076c859"/>
     </poam-item>
@@ -273,7 +287,11 @@
         <title>AwesomeCloud Access Control Procedures Out Of Date</title>
         <description>
             <h1>AwesomeCloud has not update its access control procedures in accordance with defined policy.</h1>
-        </description>        
+        </description>
+        <prop name="status-date" ns="http://fedramp.gov/ns/oscal" value="2023-01-01+00:00"/>    
+        <prop name="scheduled-completion-date" ns="http://fedramp.gov/ns/oscal" value="2023-05-01+00:00"/>  
+        <prop name="has-vendor-dependency" ns="http://fedramp.gov/ns/oscal" value="yes"/> 
+        <prop name="vendor-checkin-date" ns="http://fedramp.gov/ns/oscal" value="2023-06-01+00:00"/>     
         <related-observation observation-uuid="58e34e49-32bb-4c63-b9e6-158a0620fcd5"/>
         <associated-risk risk-uuid="56aff720-e21a-4def-8ea6-e91388c1d96f"/>
     </poam-item>

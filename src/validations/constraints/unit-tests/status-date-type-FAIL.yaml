@@ -1,0 +1,7 @@
+test-case:
+  name: Negative Test for status-date-type
+  description: This test case validates the behavior of constraint status-date-type
+  content: ../content/poam-status-date-type-INVALID.xml
+  expectations:
+    - constraint-id: status-date-type
+      result: fail

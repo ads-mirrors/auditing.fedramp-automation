@@ -1,0 +1,9 @@
+test-case:
+  name: Positive Test for poam-item-has-vendor-checkin-date
+  description: >-
+    This test case validates the behavior of constraint
+    poam-item-has-vendor-checkin-date
+  content: ../../../content/awesome-cloud/xml/AwesomeCloudPOAM.xml
+  expectations:
+    - constraint-id: poam-item-has-vendor-checkin-date
+      result: pass

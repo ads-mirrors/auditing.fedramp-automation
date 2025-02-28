@@ -1,0 +1,5 @@
+<plan-of-action-and-milestones xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="5f7afa40-3d9d-475b-9e34-47a768371be3">
+  <poam-item uuid="a908cb44-446a-450d-970d-73c968fd5389">
+    <!-- <prop name="scheduled-completion-date" ns="http://fedramp.gov/ns/oscal" value="2023-01-01+00:00"/> Missing "scheduled-completion-date" prop. -->
+  </poam-item>
+</plan-of-action-and-milestones>

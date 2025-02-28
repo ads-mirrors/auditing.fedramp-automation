@@ -209,6 +209,43 @@
     </context>
 
     <context>
+        <metapath target="/plan-of-action-and-milestones/poam-item"/>
+        <constraints>
+            <expect id="poam-item-has-scheduled-completion-date" target="." test="count(prop[@ns='http://fedramp.gov/ns/oscal' and @name='scheduled-completion-date']) = 1" level="ERROR">
+                <formal-name>POAM Item Has Scheduled Completion Date</formal-name>
+                <prop namespace="https://docs.oasis-open.org/sarif/sarif/v2.1.0" name="help-url" value="https://automate.fedramp.gov/documentation/poam/4-poam-template-to-oscal-mapping/"/>
+                <message>A FedRAMP POAM MUST include a scheduled completion date for each POAM item.</message>
+            </expect>
+            <expect id="poam-item-has-status-date" target="." test="count(prop[@ns='http://fedramp.gov/ns/oscal' and @name='status-date']) = 1" level="ERROR">
+                <formal-name>POAM Item Has Status Date</formal-name>
+                <prop namespace="https://docs.oasis-open.org/sarif/sarif/v2.1.0" name="help-url" value="https://automate.fedramp.gov/documentation/poam/4-poam-template-to-oscal-mapping/"/>
+                <message>A FedRAMP POAM MUST include a status date for each POAM item.</message>
+            </expect>
+            <expect id="poam-item-has-vendor-checkin-date" target=".[prop[@ns='http://fedramp.gov/ns/oscal' and @name='has-vendor-dependency' and @value='yes']]" test="count(prop[@ns='http://fedramp.gov/ns/oscal' and @name='vendor-checkin-date']) = 1" level="ERROR">
+                <formal-name>POAM Item Has Vendor Check-in Date</formal-name>
+                <prop namespace="https://docs.oasis-open.org/sarif/sarif/v2.1.0" name="help-url" value="https://automate.fedramp.gov/documentation/poam/4-poam-template-to-oscal-mapping/"/>
+                <message>A FedRAMP POAM MUST include a vendor check-in date for each POAM item if it is vendor dependent.</message>
+            </expect>
+            <matches id="scheduled-completion-date-type" target="prop[@ns='http://fedramp.gov/ns/oscal' and @name='scheduled-completion-date']/@value" datatype="date-with-timezone" level="ERROR">
+                <formal-name>Scheduled Completion Date Type</formal-name>
+                <prop namespace="https://docs.oasis-open.org/sarif/sarif/v2.1.0" name="help-url" value="https://automate.fedramp.gov/documentation/poam/4-poam-template-to-oscal-mapping/"/>
+                <message>A FedRAMP POAM MUST specify a scheduled completion date in a valid format for each POAM item.</message>
+                <remarks>
+                    <p>The scheduled completion date MUST be formatted as a "full-date" per RFC3339 with the addition of a timezone.</p>
+                </remarks>
+            </matches>
+            <matches id="status-date-type" target="prop[@ns='http://fedramp.gov/ns/oscal' and @name='status-date']/@value" datatype="date-with-timezone" level="ERROR">
+                <formal-name>Status Date Type</formal-name>
+                <prop namespace="https://docs.oasis-open.org/sarif/sarif/v2.1.0" name="help-url" value="https://automate.fedramp.gov/documentation/poam/4-poam-template-to-oscal-mapping/"/>
+                <message>A FedRAMP POAM MUST specify a status date in a valid format for each POAM item.</message>
+                <remarks>
+                    <p>The scheduled completion date MUST be formatted as a "full-date" per RFC3339 with the addition of a timezone.</p>
+                </remarks>
+            </matches>
+        </constraints>
+    </context>
+
+    <context>
         <metapath target="/system-security-plan/back-matter"/>
         <constraints>
             <expect id="fedramp-citations-has-correct-link" target="resource[prop[@name='type' and @value='citation' and @class='fedramp-citations']]" test="count(rlink[@href = 'https://www.fedramp.gov/assets/resources/templates/FedRAMP-Laws-Regulations-Standards-and-Guidance-Reference.xlsx']) eq 1" level="ERROR">
