@@ -234,6 +234,26 @@ To add or modify constraints and their tests, it is important to understand Meta
 
 ## Troubleshooting
 
+### How do I increase available memory for the CLI to process larger OSCAL documents?
+
+The `oscal-cli` uses the Java Runtime Environment to process and validate your FedRAMP OSCAL documents. Like many other Java-based applications, you can use environment variables in Linux, macOS, or Windows to control how much memory is accessible to the runtime and not use the default amount. These configurations are particularly helpful when debugging very large data in OSCAL format. Please review [the official Oracle Java documentation](https://docs.oracle.com/cd/E74363_01/ohi_vbp_-_installation_guide--20160224-094432-html-chunked/s66.html) for detailed information about each memory configuration option you can set with an environment variable.
+
+Below are examples for different operating systems to set environment variables for `oscal-cli` to execute with the Java Runtime Environment starting with a heap size of at least 256 megabytes and allow a maximum heap size 2 gigabytes of system memory.
+
+You set up Linux, macOS, and Unix environment variables in common shells (e.g. `bash`, `zsh`, etc.) like so. 
+
+```sh
+export JAVA_OPTS="-Xms256m -Xmx2048m"
+osca-cli ...
+```
+
+You set up Windows environment variables like so
+
+```bat
+set JAVA_OPTS="-Xms256m -Xmx2048m"
+osca-cli.bat ...
+```
+
 ### Enabling stack traces with `--show-stack-trace`
 
 See [this information](./README.md#debugging-details-of-unexpected-failures-with---show-stack-trace) on how to use `--show-stack-trace` for debugging info to troubleshoot unexpected failures.
