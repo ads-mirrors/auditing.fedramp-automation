@@ -181,7 +181,7 @@
                 <prop namespace="https://docs.oasis-open.org/sarif/sarif/v2.1.0" name="help-url" value="https://automate.fedramp.gov/help/constraint/frr217"/>
                 <message>A FedRAMP SSP MUST import a profile or catalog with a valid file or HTTP(S) address.</message>
             </expect>
-            <expect id="frr218" target="." test="count(resolve-profile(doc(resolve-uri($resolved-import-profile-href)))//control//prop[@ns='http://fedramp.gov/ns/oscal' and @name='response-point']) >= 2" level="CRITICAL">
+            <expect id="frr218" target="." test="count($resolved-profile//control//prop[@ns='http://fedramp.gov/ns/oscal' and @name='response-point']) >= 2" level="CRITICAL">
                 <formal-name>Import Profile resolves to Fedramp content</formal-name>
                 <prop namespace="https://docs.oasis-open.org/sarif/sarif/v2.1.0" name="help-url" value="https://automate.fedramp.gov/help/constraint/frr218"/>
                 <message>A FedRAMP SSP MUST import a profile or catalog of security controls to reference implemented requirements against those control(s).</message>
@@ -222,7 +222,7 @@
                 <prop namespace="https://docs.oasis-open.org/sarif/sarif/v2.1.0" name="help-url" value="https://automate.fedramp.gov/help/constraint/frr266"/>
                 <message>A FedRAMP SSP MUST set the security sensitivity level to "fips-199-low" if it is an LI-SaaS.</message>
             </expect>
-            <expect id="frr267" target=".[system-characteristics/prop[@name='authorization-type' and @value='fedramp-li-saas']]" test="exists(resolve-profile(doc(resolve-uri($resolved-import-profile-href)))//control//prop[@ns='http://fedramp.gov/ns/oscal' and @class='FedRAMP-Tailored-LI-SaaS'])" level="CRITICAL">
+            <expect id="frr267" target=".[system-characteristics/prop[@name='authorization-type' and @value='fedramp-li-saas']]" test="exists($resolved-profile//control//prop[@ns='http://fedramp.gov/ns/oscal' and @class='FedRAMP-Tailored-LI-SaaS'])" level="CRITICAL">
                 <formal-name>LI-Saas Imports LI-SaaS Profile</formal-name>
                 <prop namespace="https://docs.oasis-open.org/sarif/sarif/v2.1.0" name="help-url" value="https://automate.fedramp.gov/help/constraint/frr267"/>
                 <message>A FedRAMP SSP MUST import an LI-SaaS profile or catalog if it is an LI-SaaS.</message>
