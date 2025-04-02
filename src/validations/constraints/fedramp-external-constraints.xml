@@ -950,12 +950,12 @@
         <constraints>
             <let var="implemented-component-uuid" expression="by-component/@component-uuid"/>
             <let var="by-component-uuid" expression="by-component/@component-uuid"/>
-            <expect id="has-policy" target=".[@statement-id=$part-ids]" test="some $uuid in $by-component-uuid satisfies count(../../../system-implementation/component[@uuid=$uuid and @type='policy']) >= 1" level="ERROR">
+            <expect id="frr203" target=".[@statement-id=$part-ids]" test="some $uuid in $by-component-uuid satisfies count(../../../system-implementation/component[@uuid=$uuid and @type='policy']) >= 1" level="ERROR">
                 <formal-name>Has Policy</formal-name>
                 <prop namespace="https://docs.oasis-open.org/sarif/sarif/v2.1.0" name="help-url" value="https://automate.fedramp.gov/help/constraint/frr203"/>
                 <message>A FedRAMP SSP MUST identify policy components in the implemented requirements for controls that require them.</message>
             </expect>
-            <expect id="has-policy" target=".[@statement-id=$part-ids]" test="some $uuid in $by-component-uuid satisfies count(../../../system-implementation/component[@uuid=$uuid and @type='policy']) >= 1" level="ERROR">
+            <expect id="frr204" target=".[@statement-id=$part-ids]" test="some $uuid in $by-component-uuid satisfies count(../../../system-implementation/component[@uuid=$uuid and @type='policy']) >= 1" level="ERROR">
                 <formal-name>Has Procedure</formal-name>
                 <prop namespace="https://docs.oasis-open.org/sarif/sarif/v2.1.0" name="help-url" value="https://automate.fedramp.gov/help/constraint/frr204"/>
                 <message>A FedRAMP SSP MUST identify process or procedure components in the implemented requirements for controls that require them.</message>
