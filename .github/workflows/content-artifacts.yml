@@ -24,6 +24,7 @@ env:
   DOCKER_METADATA_PR_HEAD_SHA: true
   # https://github.com/docker/metadata-action?tab=readme-ov-file#annotations
   DOCKER_METADATA_ANNOTATIONS_LEVELS: manifest,index
+  OSCAL_EXECUTOR: oscal-cli
 jobs:
   validate-and-publish-content:
     name: Content Validation Checking, Conversion and Validation
