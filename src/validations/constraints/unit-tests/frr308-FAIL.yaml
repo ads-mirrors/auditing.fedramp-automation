@@ -1,0 +1,7 @@
+test-case:
+  name: Negative Test for frr308
+  description: This test case validates the behavior of constraint frr308, a non-FedRAMP profile will intentionally throw an error
+  content: ../content/ssp-frr308-INVALID.xml
+  expectations:
+    - constraint-id: frr308
+      result: fail

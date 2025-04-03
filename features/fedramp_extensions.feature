@@ -211,6 +211,8 @@ Examples:
   | frr305 |
   | frr306 |
   | frr307 |
+  | frr308 |
+  | frr309 |
 #END_DYNAMIC_CONSTRAINT_IDS
 
 @constraints
@@ -600,6 +602,10 @@ Examples:
   | frr306-PASS.yaml |
   | frr307-FAIL.yaml |
   | frr307-PASS.yaml |
+  | frr308-FAIL.yaml |
+  | frr308-PASS.yaml |
+  | frr309-FAIL.yaml |
+  | frr309-PASS.yaml |
 #END_DYNAMIC_TEST_CASES
 
 @style-guide
